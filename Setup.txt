@@ -1,14 +1,19 @@
 Setup
 	JDK >= 8
 	Java :- https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+	Direct Link:- https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
+	Filename:- x64 MSI Installer
 	
 Eclipse Installation
 		https://www.eclipse.org/downloads/packages/release/oxygen/r/eclipse-ide-java-ee-developers
-		File: Windows x86_64
+		Filename: Windows x86_64
 
 Downloading and installing Apache Tomcat
 		https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/
 		Filename: apache-tomcat-9.0.39.zip
+		Direct Link: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/apache-tomcat-9.0.39.zip
 		
 Maven :
-	https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
+	Link: https://maven.apache.org/download.cgi
+	Direct Link:- https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
+	Filename:- apache-maven-3.8.4-bin.zip
