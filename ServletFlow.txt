@@ -1,0 +1,25 @@
+Normal Servlet-Flow:-
+
+UI(HTML -> index.jsp)
+	<a href="genericServlet">Click to Open Generic Servlet</a>
+	URL-> http://localhost:8086/servlets/genericServlet
+	Web Server (Contains our application deployed -> WAR File -> All the java class compiled -> .class and entire WEB-INF structure)
+	-> webapp
+		-> WEB-INF
+			-> web.xml
+					servlet-mapping
+						->url-pattern -> genericServlet
+							-> servlet-name -> GenericServlet
+					servlet
+						-> servlet-name -> GenericServlet
+							-> <servlet-class>com.simplilearn.MyGenericServlet</servlet-class>
+									init-param -> name: driver, value: com.mysql.driver
+
+					Class -> MyGenericServlet -> service(ServletRequest request, ServletResponse response)
+						-> response.getWriter() -> println -> Welcome to the class, we are learning about Generic Servlet -> UI
+
+	Response is shown in this URL :- http://localhost:8086/servlets/genericServlet
+		Welcome to the class, we are learning about Generic Servlet
+		Driver Information :
+		com.mysql.driver
+

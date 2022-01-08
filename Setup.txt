@@ -1,32 +1,37 @@
-Setup
-	JDK >= 8
+Setup:-
+
+
+Java Development Toolkit:-
+	Version:- >= 8
 	Java :- https://www.oracle.com/java/technologies/downloads/#jdk17-windows
 	Direct Link:- https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
 	Filename:- x64 MSI Installer
 	After downloading:- Click on install
 
 Eclipse Installation
-		https://www.eclipse.org/downloads/packages/release/oxygen/r/eclipse-ide-java-ee-developers
-		Filename: Windows x86_64
-		After downloading:- Just Extract
+	https://www.eclipse.org/downloads/packages/release/oxygen/r/eclipse-ide-java-ee-developers
+	Filename: Windows x86_64
+	After downloading:- Just Extract
 
-Downloading and installing Apache Tomcat
-		https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/
-		Filename: apache-tomcat-9.0.39.zip
-		Direct Link: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/apache-tomcat-9.0.39.zip
-		After downloading:- Just Extract
+Apache Tomcat
+	Version:- 9.0.39
+	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/
+	Filename: apache-tomcat-9.0.39.zip
+	Direct Link: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/apache-tomcat-9.0.39.zip
+	After downloading:- Just Extract
 
 Maven :
+	Version:- 3.8.4
 	Link: https://maven.apache.org/download.cgi
 	Direct Link:- https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
 	Filename:- apache-maven-3.8.4-bin.zip
 	After downloading:- Just Extract
 
 	System Environment Variables:-
+	
 	M2_HOME
 		Key :- M2_HOME
 		Value:- C:\apache-maven-3.8.4\
-		
 
 	JAVA_HOME
 		Key:- JAVA_HOME
@@ -36,12 +41,13 @@ Maven :
 		C:\Program Files\Java\jdk1.8.0_172\bin;
 		C:\apache-maven-3.8.4\bin;
 
-	set PATH=%PATH%;C:\Program Files\Java\jdk1.8.0_172\bin;C:\apache-maven-3.8.4\bin;
+	Command Prompt:- One time setup
+		set PATH=%PATH%;C:\Program Files\Java\jdk1.8.0_172\bin;C:\apache-maven-3.8.4\bin;
 
 	Open Command Prompt:
 		C:\windows> mvn -version
-			Maven home: C:\apache-maven-3.8.4
-			
+			Output :- Maven home: C:\apache-maven-3.8.4
+
 		C:\windows> java -version
-			java version "17.0.1" 2021-10-19 LTS
+			Output :- java version "17.0.1" 2021-10-19 LTS
 
