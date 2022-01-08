@@ -1,0 +1,75 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<!-- com.simplilearn.MyGenericServlet -->
+	<servlet>
+		<servlet-name>GenericServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlets.MyGenericServlet</servlet-class>
+		<!-- These parameters are specific to MyGenericServlet -->
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>com.mysql.driver</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericServlet</servlet-name>
+		<url-pattern>/genericServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- com.simplilearn.ServletConfigDemo -->
+	<servlet>
+		<servlet-name>ConfigParamsDemoServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlets.ServletConfigDemo</servlet-class>
+		<!-- These parameters are specific to ConfigParamsDemoServlet -->
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>raghavedra</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>raghav@123</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConfigParamsDemoServlet</servlet-name>
+		<url-pattern>/configdemo</url-pattern>
+	</servlet-mapping>
+
+	<!-- com.simplilearn.ServletContextDemo -->
+	<servlet>
+		<servlet-name>ContextParamsDemoServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlets.ServletContextDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContextParamsDemoServlet</servlet-name>
+		<url-pattern>/contextdemo</url-pattern>
+	</servlet-mapping>
+	
+		<!-- This is visible to all the serlvets -->
+	<context-param>
+		<param-name>email</param-name>
+		<param-value>raghav@gmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>city</param-name>
+		<param-value>bangalore</param-value>
+	</context-param>
+	
+		<!-- com.simplilearn.ServletRequestDemo -->
+	<servlet>
+		<servlet-name>RequestParamsDemoServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlets.ServletRequestDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RequestParamsDemoServlet</servlet-name>
+		<url-pattern>/requestparamsdemo</url-pattern>
+	</servlet-mapping>
+</web-app>
