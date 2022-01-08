@@ -1,0 +1,14 @@
+Setup
+	JDK >= 8
+	Java :- https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+	
+Eclipse Installation
+		https://www.eclipse.org/downloads/packages/release/oxygen/r/eclipse-ide-java-ee-developers
+		File: Windows x86_64
+
+Downloading and installing Apache Tomcat
+		https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.39/bin/
+		Filename: apache-tomcat-9.0.39.zip
+		
+Maven :
+	https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
