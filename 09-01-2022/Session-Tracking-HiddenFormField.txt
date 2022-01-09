@@ -1,0 +1,13 @@
+Session Tracking -> Hidden Form Field
+	1. UI -> 
+		login form -> action -> first -> com.simplilearn.FirstServlet
+		-> username  :- raghav
+		-> Go
+	2. FirstServlet 
+			-> form action : second
+			-> input : hidden -> uname = raghav 
+			-> Go to second Servlet
+			
+	3. Second Servlet
+			-> Validate the hidden field what we received from the previous servlet.  
+			-> UI -> Hello raghav

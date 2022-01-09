@@ -1,0 +1,18 @@
+Session Tracking -> Cookie
+	1. login form -> action -> loginServlet -> com.simplilearn.LoginServlet
+		-> username  :- raghav
+		-> login
+	2. LoginServlet -> set the cookie
+			-> username, set cookie -> userId -> username(raghav)
+			-> sendRedirect("/dashboard"); -> com.simplilearn.AccountDashboard
+	3. AccountDashboard -> extract the cookie
+		-> userId, value
+		-> if present
+				-> UserId read from cookie :- raghav
+			else
+				-> No UserId cookie was found
+
+Communication between Client and Server :-
+	Browser -> request -> Application Server
+										servlet(LoginServlet set the cookie(userId))-> dashboard (cookie validation happens)
+	Browser <- response + cookie <- server response along with cookie

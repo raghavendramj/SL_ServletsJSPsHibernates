@@ -1,0 +1,30 @@
+Session Tracking -> Login and Logout Flow
+	1. UI ->
+		index.html
+			-> Login -> login.html
+			-> Logout -> Logout Servlet
+			-> Profile -> Profile Servlet
+
+	2: login.html
+		form
+			action-> Login Servlet
+			-> username -> raghavendra
+			-> password -> admin@123
+			-> submit
+
+	3. Login Servlet
+		- link.html -> Login, Logout, Profile
+		-> username and password will be set to session
+		-> password === admin@123,
+		-> Welcome to our website
+		If user clicks on profile
+
+	4. Profile Servlet
+		-> session != null
+				Welcome to the profile page.
+		else if user clicks on logout
+	5. Logout Servlet
+		-> session.invalidate() -> will remove all the session details
+
+
+

@@ -1,0 +1,36 @@
+Filters -> Servlet Flow
+
+UI(HTML -> index.jsp)
+	form: action :- dashboard, method:- GET
+			Enter Username :- raghavendra
+			Submit
+	URL-> http://localhost:8086/filters/dashboard?username=raghavendra&submit=Submit+Query
+	Web Server
+		-> webapp
+			-> WEB-INF
+				-> web.xml
+						<!-- FILTER SPECIFIC MAPPINGS -->
+						filter-mapping
+							url-pattern -> /dashboard
+							filter-name -> MyFilter
+						filter
+							filter-name -> MyFilter
+							filter-class -> com.simplilearn.filters.LoginFilter
+				
+						servlet-mapping
+							->url-pattern -> /dashboard
+							-> servlet-name -> Dashboard
+						servlet
+							-> servlet-name -> Dashboard
+							-> servlet-class -> com.simplilearn.servlets.Dashboard
+
+						Class -> Dashboard -> doGet(HttpServletRequest request, HttpServletResponse response)
+							-> response.getWriter() -> println -> Welcome to the application -> raghavendra
+
+	Response is shown in this URL :- http://localhost:8086/filters/dashboard?username=raghavendra&submit=Submit+Query
+		Welcome to the application, raghavendra
+
+
+	Simple Flow with and without Filter:- 
+		Servlet -> UI -> request -> Servlet -> response -> UI
+		Filters-> UI -> request -> Filter -> Servlet -> response -> UI

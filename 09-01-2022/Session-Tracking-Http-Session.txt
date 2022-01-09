@@ -1,0 +1,14 @@
+Session Tracking -> Http Session
+	1. UI -> 
+		login form -> action -> first -> com.simplilearn.FirstServlet
+		-> username  :- raghavendra
+		-> password  :- raghav@123
+		-> Login
+	2. FirstServlet 
+			-> http session -> username -> raghavendra
+										 password -> raghav@123 
+			-> UI -> Thanks for logging in, Welcome to Simplilearn!  <a href="dashboard">Please visit our Dashboard </a>
+			
+	3. Dashboard Servlet
+			-> Extract the session information, ie. username
+			-> UI -> Hey raghavendra, Welcome to your dashboard!

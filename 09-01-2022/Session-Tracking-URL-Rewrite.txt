@@ -1,0 +1,14 @@
+Session Tracking -> URL Rewriting
+	1. UI -> 
+		login form -> action -> login -> com.simplilearn.LoginServlet
+		-> username  :- raghav
+		-> login
+	2. LoginServlet 
+			-> rewrite the url for next servlet -> "/welcome?username="+readUsername
+			-> sendRedirect("/welcome?username="+readUsername); -> com.simplilearn.WelcomeServlet
+	3. WelcomeServlet -> extract the rewrited request parameter
+		-> username
+		-> if present
+				-> username obtained from URL Rewriting:raghavendra
+			else
+				-> No username was found

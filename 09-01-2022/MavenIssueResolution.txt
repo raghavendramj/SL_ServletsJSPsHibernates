@@ -11,7 +11,7 @@ Maven :
 	Direct Link:- https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
 	Filename:- apache-maven-3.8.4-bin.zip
 	After downloading:- Just Extract
-	
+
 Create a folder named Softwares
 	-> Softwares
 			-> eclipse.zip
@@ -35,5 +35,10 @@ Create a folder named Softwares
 								-> New -> C:\Desktop\Softwares\apache-maven-3.8.4\bin
 								-> New -> C:\Program Files\Java\jdk1.8.0_172\bin
 							And click on Ok till all the pop-up closes.
-							
-			
+
+Open Command Prompt:
+	C:\windows> mvn -version
+		Output :- Maven home: C:\apache-maven-3.8.4
+
+	C:\windows> java -version
+		Output :- java version "17.0.1" 2021-10-19 LTS
