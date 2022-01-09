@@ -1,0 +1,17 @@
+Step : 01
+	File -> New -> Maven Project
+	
+Step : 02
+	Next
+Step : 03
+	GroupId:- 	org.apache.maven.archetypes
+	artifact id :- 	maven-archetype-webapp
+	version:- 		1.0 
+	
+Step : 04
+	Fill the following
+		GroupId:- 	com.simplilearn
+		artifact id :- 	servletbasics
+		version:- 		0.0.1-SNAPSHOT
+		package :- 	com.simplilearn.servletbasics	
+	And Click on Finish

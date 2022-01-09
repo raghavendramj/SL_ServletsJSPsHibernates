@@ -1,0 +1,22 @@
+How to add dependencies:
+
+Step 01:-
+	Ctrl+R => type pom.xml
+Step 02:-
+	Down you will find tabs, Click on pom.xml
+Step 03:-
+	Add the following inside <dependencies> next to a existing dependency
+	<!-- Servlets -->
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.0.1</version>
+		<scope>provided</scope>
+	</dependency>
+	

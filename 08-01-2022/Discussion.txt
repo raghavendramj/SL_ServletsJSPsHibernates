@@ -1,0 +1,23 @@
+Course :  Full Stack Java Developer
+Phase-2: Become a back-end
+
+Community form link: https://community.simplilearn.com/threads/phase-2-become-a-back-end-expert-nov-cohort-jan-8-feb-5-raghavendra.69779/
+Google drive link: https://drive.google.com/drive/u/1/folders/1xvMO0ln-WhW_3_9aXBkNPU_9Mj8rCh3X
+Feedback Link: https://lms.simplilearn.com/nps/session/60eac558a8949732129d0ac2
+
+Database : Table -> Student, id, name, email
+
+create table student(
+	id integer primary key auto_increment,
+	name varchar(200),
+	email varchar(200)
+);
+
+POST ->   C -> Create 	-> insert into student(id, name, email) values (1, 'raghav', 'raghav@gmail.com');
+										-> insert into student(id, name, email) values (2, 'dummy', 'dummy@gmail.com');
+GET ->	    R -> Read	-> select * from student;
+PUT ->	    U -> Update -> update student set name='raghavendra' where id=1;
+DELETE ->D -> Delete	-> delete from student where id=2;
+
+
+http://localhost:8083/searchByEmail?email=raghav@gmail.com&password=raghav@123

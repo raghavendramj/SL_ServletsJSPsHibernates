@@ -1,0 +1,39 @@
+"in maven project JavaResources folder in not available "
+
+Eclipse Installation
+	https://www.eclipse.org/downloads/packages/release/oxygen/r/eclipse-ide-java-ee-developers
+	Filename: Windows x86_64
+	After downloading:- Just Extract
+
+Maven :
+	Version:- 3.8.4
+	Link: https://maven.apache.org/download.cgi
+	Direct Link:- https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip
+	Filename:- apache-maven-3.8.4-bin.zip
+	After downloading:- Just Extract
+	
+Create a folder named Softwares
+	-> Softwares
+			-> eclipse.zip
+			-> apache-maven-3.8.4-bin.zip
+		Select both of them, and extract here
+	-> Set Environment Variables -> Windows
+		MyComputer
+			-> Properties
+				-> Advanced System Settings
+					-> Environment Variables
+						-> There will be 2 sections
+						-> 1st Section
+								-> Click on New
+									1. Variable Name: M2_HOME,
+									2. Variable Value: C:\Desktop\Softwares\apache-maven-3.8.4
+								-> Click on New
+									1. Variable Name: JAVA_HOME,
+									2. Variable Value: C:\Program Files\Java\jdk1.8.0_172
+						-> 2nd Section
+								-> Select path and click on edit
+								-> New -> C:\Desktop\Softwares\apache-maven-3.8.4\bin
+								-> New -> C:\Program Files\Java\jdk1.8.0_172\bin
+							And click on Ok till all the pop-up closes.
+							
+			
