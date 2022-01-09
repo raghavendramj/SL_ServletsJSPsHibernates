@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Filter Demo</title>
+<title>URL Rewrite- Sesssion Tracking Demo</title>
 <style>
 table, th, td {
 	border: 1px solid black;
@@ -13,15 +13,11 @@ table, th, td {
 </head>
 <body>
 	<h3> Login Form</h3>
-	<form action="dashboard" method="GET">
+	<form action="welcome" method="GET">
 		<table>
 			<tr>
 				<td><label> Enter Username </label></td>
 				<td><input name="username" type="text" /></td>
-			</tr>
-			<tr>
-				<td><label> Enter Password </label></td>
-				<td><input name="password" type="password" /></td>
 			</tr>
 		</table>
 		<br />

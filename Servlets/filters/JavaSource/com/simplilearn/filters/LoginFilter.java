@@ -12,6 +12,7 @@ import javax.servlet.ServletResponse;
 public class LoginFilter implements Filter {
 
 	public void init(FilterConfig filterConfig) throws ServletException {
+		System.out.println("Init Method : "+ filterConfig.toString());
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -26,7 +27,7 @@ public class LoginFilter implements Filter {
 	}
 
 	public void destroy() {
-
+		System.out.println("Destroy Method ");
 	}
 
 }
