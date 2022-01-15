@@ -1,0 +1,71 @@
+Flow Diagram
+----------------
+
+JDBC Connection
+		index.jsp
+		-> <a href="JDBCSetup">Get Students</a>
+	JDBCSetup
+		-> doGet()
+			-> Step :01 Register the driver -> Class.forName("com.mysql.cj.jdbc.Driver");
+			-> Step : 02 Get the connection
+							String databaseURL = "jdbc:mysql://localhost:3306/sljdbc";
+							String username = "root";
+							String password = "admin@123";
+							Connection connection = DriverManager.getConnection(databaseURL, username, password);
+			-> Step: 03 Create a SQL Query
+							Statement statement = connection.createStatement();
+							String sqlQuery = "select * from student";
+			-> Step 04.1 : Execute the query
+							ResultSet resultSet = statement.executeQuery(sqlQuery);
+			-> Step 04.2 Manipulate the result and send it to the UI
+						while (resultSet.next()) {
+							int id = resultSet.getInt(1);
+							String name = resultSet.getString(2);
+							String email = resultSet.getString(3);
+							out.println("Id :- " + id + " Name :- " + name + " Email :- "+ email);
+						}
+
+1. Get All Products
+	sqlQuery -> "select * from products"
+
+2. Get Product By Id
+		String paramterizedSQLQuery = "select * from products where product_id=?";
+		PreparedStatement preparedStatement = connection.prepareStatement(paramterizedSQLQuery);
+		String product_id = request.getParameter("product_id");
+		preparedStatement.setInt(1, Integer.parseInt(product_id));
+		preparedStatement.executeQuery();
+
+3. Get Product by name
+		String paramterizedSQLQuery = "select * from products where name=?";
+		PreparedStatement preparedStatement = connection.prepareStatement(paramterizedSQLQuery);
+		String productName = request.getParameter("productName");
+		preparedStatement.setString(1, productName);
+		preparedStatement.executeQuery();
+
+4. Create a product
+		String paramterizedSQLQuery = "insert into products(name, quantity_in_stock, unit_price) values(?, ?, ?);";
+		PreparedStatement preparedStatement = connection.prepareStatement(paramterizedSQLQuery);
+
+		preparedStatement.setString(1, request.getParameter("productName"));
+		preparedStatement.setInt(2, Integer.parseInt(request.getParameter("quantity_in_stock")));
+		preparedStatement.setInt(3, Integer.parseInt(request.getParameter("unit_price")));
+		int status = preparedStatement.executeUpdate();
+			
+5. Stored Procedures
+		String storedProcudureQuery = "{call add_product(?, ?, ?)}";
+		CallableStatement callableStatement = connection.prepareCall(storedProcudureQuery);
+		callableStatement.setString(1, request.getParameter("productName"));
+		callableStatement.setInt(2, Integer.parseInt(request.getParameter("quantity_in_stock")));
+		callableStatement.setInt(3, Integer.parseInt(request.getParameter("unit_price")));
+		int status = callableStatement.executeUpdate();
+		
+		Stored Procedure:-
+		CREATE DEFINER=`root`@`localhost` PROCEDURE `add_product`(IN product_name varchar(100), IN quantity decimal(10, 2 ),  IN unit_price decimal(10, 2 ))
+		BEGIN
+			insert into products(name, quantity_in_stock, unit_price) values(product_name, quantity, unit_price);
+		END
+
+
+
+
+

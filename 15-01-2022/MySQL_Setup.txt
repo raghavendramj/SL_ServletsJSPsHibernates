@@ -1,0 +1,15 @@
+MySQL Setup
+
+MySQL Installer 8.0.27 
+-------------------------
+	Link:- https://dev.mysql.com/downloads/installer/
+	Downlead file name :- Windows (x86, 32-bit), MSI Installer
+	Version :- 8.0.27
+	Size :- 470.2M	
+
+MySQL Workbench 8.0.27
+-------------------------
+	Link:- https://dev.mysql.com/downloads/workbench/
+	Filename :- Windows (x86, 64-bit), MSI Installer 
+	Version :- 8.0.27
+	Size :- 42.6M	

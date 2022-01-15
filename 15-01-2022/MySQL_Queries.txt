@@ -1,0 +1,120 @@
+
+
+SQL Basics
+-----------
+CRUD
+C-> Create
+R -> Read
+U -> Update
+D -> Delete
+
+
+Steps to create data in MySQL:-
+
+MySQL  JS > \sql
+MySQL  SQL > \connect root@localhost
+
+create database sljdbc;
+use sljdbc;
+show tables;
+
+create table student (
+	student_id bigint not null auto_increment,
+	name varchar(255),
+	email varchar(255),
+	primary key (student_id)
+);
+
+insert into student (name, email) values ('raghavendra', 'raghavendra@gmail.com'), ('keshav', 'keshav@gmail.com'), ('thilak', 'thilak@gmail.com');
+
+create table course (
+		course_id bigint not null auto_increment,
+        credit varchar(255),
+        title varchar(255),
+        primary key (course_id)
+) ;
+
+insert into course (credit, title) values ('100', 'Learn Java'), ('150', 'Learn DS'), ('125', 'Learn System Design');
+
+student N : N course
+create table map_student_course(
+	course_id bigint not null,
+	student_id bigint not null
+);
+
+alter table map_student_course
+add constraint course_fk
+foreign key(course_id) references course(course_id);
+
+alter table map_student_course
+add constraint student_fk
+foreign key(student_id) references student(student_id);
+
+
+select * from student;
+select * from course;
+select * from map_student_course;
+
+
+insert map_student_course (course_id, student_id) values(1, 1);
+insert map_student_course (course_id, student_id) values(1, 2);
+insert map_student_course (course_id, student_id) values(1, 3);
+insert map_student_course (course_id, student_id) values(2, 3);
+insert map_student_course (course_id, student_id) values(2, 2);
+insert map_student_course (course_id, student_id) values(3, 1);
+
+
+Question:-
+	Fetch all the student names with course credit, title who have registered to course - Learn Java
+
+	Approach :-
+	course(course_id) -> map_student_course(course_id, student_id) -> student(student_id)
+
+	Step : 01 :-Get the Learn Java row
+	course -> Learn Java
+			select credit, title
+			from course
+			where title='Learn Java';
+
+	Step : 02 :- Join this row with map_student_course
+			select c.title, c.credit
+			from course c
+			inner join map_student_course msp on msp.course_id = c.course_id
+			where c.title='Learn Java';
+
+	Step : 03 :- Join the result with student table
+					select c.title, c.credit, s.name
+					from course c
+					inner join map_student_course msp on msp.course_id = c.course_id
+					inner join student s on s.student_id = msp.student_id
+					where c.title='Learn Java';
+
+
+
+Database Used :- order-directory
+
+Query -01 :- Display the no of customer group by their genders who have placed any order of amount greater that or equal to 3000.
+	Tables :-  customer, order
+
+	select * from customer;
+	select * from orders;
+	
+	Level 1:
+		select *
+		from customer c
+		inner join orders o on o.cus_id = c.cus_id;
+	Level 2:
+		select c.cus_gender, o.ord_amount
+		from customer c
+		inner join orders o on o.cus_id = c.cus_id;
+	Level 3:
+		select c.cus_gender, count( c.cus_gender)
+		from customer c
+		inner join orders o on o.cus_id = c.cus_id
+		group by c.cus_gender;
+	Level 4:
+		select c.cus_gender, count( c.cus_gender)
+		from customer c
+		inner join orders o on o.cus_id = c.cus_id
+		where o.ord_amount >=3000
+		group by c.cus_gender;

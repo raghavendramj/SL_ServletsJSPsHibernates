@@ -1,0 +1,14 @@
+JDBC Information
+
+Root username					:- 		root
+Password 							:- 		admin@123
+URL										:-		mysql@localhost:3306
+Java Connect String URL 	:-		 jdbc:mysql://localhost:3306/sljdbc
+
+
+
+create product
+	product_id | name                         | quantity_in_stock | unit_price
+	
+	insert into products(name, quantity_in_stock, unit_price) values("Dal Thadka", 10,  2);
+	insert into products(name, quantity_in_stock, unit_price) values(?,?, ?);
