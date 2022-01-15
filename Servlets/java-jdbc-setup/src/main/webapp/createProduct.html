@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous" />
+<title>Add Product to database</title>
+</head>
+
+<body>
+	<div class="container">
+	<h3>Add Product to database</h3>
+	<form action="products" method="POST">
+		 <div class="form-group">
+		    <label for="productName">Name :</label>
+		    <input type="text" class="form-control" name="productName">
+		  </div>
+		  <div class="form-group">
+		    <label for="quantity_in_stock">Quantity In Stock:</label>
+		    <input type="text" class="form-control" name="quantity_in_stock">
+		  </div>
+		   <div class="form-group">
+		    <label for="unit_price">Unit Price:</label>
+		    <input type="text" class="form-control" name="unit_price">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	</div>
+</body>
+</html>
