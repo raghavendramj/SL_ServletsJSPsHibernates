@@ -20,6 +20,14 @@
 		<description></description>
 		<servlet-class>com.simplilearn.StoredProcedures</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>DBOperations</servlet-name>
+		<servlet-class>com.simplilearn.DBOperations</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StudentsDetails</servlet-name>
+		<servlet-class>com.simplilearn.StudentsDetails</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>JDBCSetup</servlet-name>
 		<url-pattern>/JDBCSetup</url-pattern>
@@ -31,5 +39,13 @@
 	<servlet-mapping>
 		<servlet-name>StoredProcedures</servlet-name>
 		<url-pattern>/procedures</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DBOperations</servlet-name>
+		<url-pattern>/operations</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentsDetails</servlet-name>
+		<url-pattern>/students</url-pattern>
 	</servlet-mapping>
 </web-app>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous" />
+<title>DDL Operations</title>
+</head>
+
+<body>
+	<div class="container">
+		<h3>Database Operations</h3>
+		<br />
+		<!-- web.xml => <url-pattern>/operations</url-pattern> -->
+		
+		<form action="operations" method="POST"> 
+			<div class="form-group">
+				<label for="productName">Enter the Database name : </label> 
+				<input type="text" class="form-control" name="databaseName">
+			</div>
+			<button type="submit" class="btn btn-primary" name="operation" value="create">Create Database</button><br /><br />
+			<button type="submit" class="btn btn-danger" name="operation" value="delete">Delete Database</button><br /><br />
+			<button type="submit" class="btn btn-default" name="operation" value="getAll">Get All Databases</button>
+		</form>
+	</div>
+</body>
+</html>
