@@ -1,0 +1,14 @@
+Assignment:
+	-> Update
+		-> Navigate to update form with fields filled in
+		-> On click of update show success message and fetch the student info 
+		-> The Student with id : xyz got updated with following data...
+			id :- 1, Name: Kumar, Email:-kumar@gmail.com
+	-> Delete
+		-> On click of delete show success message and fetch the student info 
+		-> The Student with id : xyz got deleted successfully.
+		
+		
+		
+		
+	

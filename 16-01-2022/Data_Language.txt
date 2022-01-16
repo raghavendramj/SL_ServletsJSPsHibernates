@@ -1,0 +1,30 @@
+SQL Command
+	DDL :- Data Definition Language
+		-> Create, Drop, Alter and Truncate
+	DML :- Data Manipulation Language
+		-> Insert, update, Delete 
+	DCL :- Data Control Language
+		-> grant, revoke
+	TCL :- Transaction Control Language
+		-> Commit, Rollback, SavePoint
+	DQL :- Data Query Language
+		-> select		
+		
+ACID
+	-> Atomicity
+		-> Entire transaction takes place at once, or doesn't happen at all.
+	-> Consistency
+		-> Database must be consistent before and after the transaction
+	-> Isolation
+		-> Multiple Transaction occur independently without interference
+	-> Durability
+		-> The changes of a successful transaction occurs even if system failure.
+		
+		
+Create Database
+	-> i don't want db name -> creation done me
+	
+Deleting the database
+	-> delete the existing database
+
+

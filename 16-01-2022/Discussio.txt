@@ -1,0 +1,5 @@
+Questions
+	i have installed mysql but password is not accepting -> When you install you will give the password
+	
+	
+	Does JAva and JAVA EE maintain same version nos or they are differrent

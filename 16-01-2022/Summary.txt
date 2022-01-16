@@ -1,0 +1,43 @@
+databaseURL=jdbc:mysql://localhost:3306/ 
+username=root
+password=admin@123
+
+Summary
+	-> Database Operations
+		-> Create DB
+				-> query :-  create database raghav_db; 
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/", root, admin@123
+					executeUpdate();
+					close the connection
+		-> Drop DB
+				-> query :-  drop database raghav_db; 
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/", root, admin@123
+					executeUpdate();
+					close the connection
+	-> CRUD
+		-> Created student -> UI -> form-> students -> email and name 
+				-> query :-  insert into student(name, email) values(?, ?); 
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/sljdbc", root, admin@123
+					executeUpdate();
+					close the connection
+		-> Read the Students
+				-> query :-  select * from student;
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/sljdbc", root, admin@123
+					executeQuery();
+					close the connection
+		-> Delete Student -> Almost completed  UI -> form-> student_id 
+				-> query :-  delete from student where student_id=?
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/sljdbc", root, admin@123
+					executeUpdate();
+					close the connection
+		-> Update Student -> UI -> form-> students -> email and name 
+				-> query :-  delete from student where student_id=?
+					registered driver -> Class.forName("com.mysql.cj.jdbc.Driver")
+					statement -> connection -> "jdbc:mysql://localhost:3306/sljdbc", root, admin@123
+					executeUpdate();
+					close the connection

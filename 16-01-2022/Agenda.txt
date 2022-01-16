@@ -1,0 +1,7 @@
+ CREATE DB, SELECT DB, DROP DB
+Assisted Practice: Create, Select, and Drop a Database
+Unassisted Practice: Create, Select, and Drop a Database
+Insertion, Updation, and Deletion of Database Records
+Assisted Practice: Insertion, Updation, and Deletion of Database Records
+Q&A with Knowledge Checks (5)
+Lesson-End Project: Retrieving the Product Details Using the Product ID
