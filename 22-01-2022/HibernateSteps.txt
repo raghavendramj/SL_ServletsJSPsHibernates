@@ -1,0 +1,15 @@
+Hibernates Steps
+
+1. Create the persistent class
+2. Create the mapping file for the persistent class
+3. Create the configuration file for database.
+	Link Employee ---> employee table
+
+
+
+
+
+Queries Performed:
+
+truncate table employee;
+drop table employee;

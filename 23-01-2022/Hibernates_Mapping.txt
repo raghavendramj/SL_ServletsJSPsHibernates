@@ -1,0 +1,20 @@
+Mobiles info :
+[Mobile [id=1, model=10 Pro, features={ROM=256 GB, Company=OnePlus, RAM=12 GB}],
+Mobile [id=2, model=14 Pro, features={ROM=1024 GB, Company=Apple, RAM=16 GB}]]
+
+Course n : n Student
+Student
+	-> id, name, List<Courses>
+
+Employee
+	name, address
+	1 : 1
+Address
+	city, state, country
+	
+Database :
+	Employee
+	Address
+	Employee ->name, address, city, state, country
+
+Employees info : [Employee [id=1, name=John Doe, address=Address [city=BN, state=KA, pinCode=565656]], Employee [id=2, name=Paul Adams, address=Address [city=MYS, state=KA, pinCode=523121]]]

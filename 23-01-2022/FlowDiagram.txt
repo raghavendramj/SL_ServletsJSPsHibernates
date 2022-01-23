@@ -1,0 +1,30 @@
+@Entity
+Employee
+	id, name, salary
+
+EmployeeDao
+	HibernateTemplate -> setter injection	
+	Save
+	Update
+	Delete
+	ReadAll
+	Read By Id
+	
+InsertData
+	read the applicationContext.xml
+	
+applicationContext.xml
+	-> datasource -> connect to the backend database
+		-> sessioFactory -> get the session/open the session
+			-> hibernateTemplate -> provides all the methods of CRUD operations like save, update, delete, read etc..
+				-> EmployeeDao - uses hibernateTemplate for CRUD operations
+		
+InsertData
+	-> applicationContext.xml -> datasource->sessioFactory->hibernateTemplate-> EmployeeDao
+	-> EmployeeDao -> empDAO
+	Employee object will be created -> insert the data into the employee table	
+	-> empDAO.save
+	-> empDAO.readAll
+	-> empDAO.read
+	-> empDAO.update
+	-> empDAO.delete

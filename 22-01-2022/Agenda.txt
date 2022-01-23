@@ -1,0 +1,13 @@
+Lesson 3:
+Section Introduction
+Hibernate Overview
+Assisted Practice: Configuration of Hibernate
+Assisted Practice: Hibernate Configuration Using XML in Eclipse
+Assisted Practice: Hibernate Configuration Using Annotations in Eclipse
+Hibernate logging by Log4j
+Assisted Practice: Hibernate logging by Log4j
+Hibernate Mapping
+Collection Mapping Types in Hibernate
+Assisted Practice: Collection Mapping in Hibernate
+
+Doubt Clearance:  10.45 PM -> 30-45 mins

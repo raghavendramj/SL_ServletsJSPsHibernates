@@ -1,0 +1,31 @@
+Freshers
+	Aptitude
+	Problem Solving
+	Problem Solving ->  Java or J2EE
+	Behavioral 
+
+Laterals >+2 experience
+	Round 1 : Problem Solving
+		-> 
+	Round 2 : Problem Solving
+	Round 3 : Problem Solving
+	Round 4 : Technical related to Java/C++/Phyton/JS/or technical 
+
+6+
+	Round 1 : Problem Solving
+	Round 2 : Problem Solving
+	Round 3 :  Technical related to Java/C++/Phyton/JS/or technical  -> Java or J2EE
+	Round 4 : System Design 
+	
+	
+	Tier 1 and Tier 2 
+	
+	Problem Solving
+		leetcode/hackerrank/codechef/hackerearth
+		
+		https://leetcode.com/explore/featured/card/top-interview-questions-easy/
+		
+		https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/
+		
+		
+	
