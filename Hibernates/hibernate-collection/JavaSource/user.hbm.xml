@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+	<class name="com.simplilearn.entity.User" table="user">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name"></property>
+
+		<list name="hobbies" table="hobbies">
+			<key column="hobbieId"></key>
+			<!-- This is here to represent them as indexed collection -->
+			<index column="type"></index>
+			<element column="hobbie" type="string"></element>
+		</list>
+		<!-- 
+			<set name="hobbies" table="hobbies">
+				<key column="hobbieId"></key>
+				<element column="hobbie" type="string"></element>
+			</set>
+		 -->
+	</class>
+</hibernate-mapping>

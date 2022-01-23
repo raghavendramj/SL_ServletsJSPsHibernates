@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+	<class name="com.simplilearn.entity.Mobile" table="mobile">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="model"></property>
+
+		<map name="features" table="features" cascade="all">
+			<key column="featureId"></key>
+			<index column="featureName" type="string"></index>
+			<element column="featureValue" type="string"></element>
+		</map>
+
+	</class>
+</hibernate-mapping>
