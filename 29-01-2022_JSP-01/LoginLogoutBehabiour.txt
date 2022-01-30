@@ -1,0 +1,18 @@
+index.jsp
+	-> login.jsp
+	-> logout.jsp
+	-> dashboard.jsp
+
+login.jsp
+	-> username
+	-> password
+	->Submit -> loginprocess.jsp
+
+loginprocess.jsp
+	if valid user -> dashboard.jsp
+
+logout.jsp
+	-> invalidates the session
+
+
+

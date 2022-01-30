@@ -1,0 +1,2 @@
+<context:component-scan
+  base-package="com.simpilearn" />

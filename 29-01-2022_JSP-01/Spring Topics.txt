@@ -1,0 +1,26 @@
+Spring
+	-> Dependency Injection
+	-> XML Based Configuration
+		-> bean -> profile- student
+			-> inject -> constructor-arg -> ref=student1
+		-> bean -> student1			
+	-> Java Annotation based configuration -> step1
+		-> Inversion of control
+		-> component-scan -> used to scan all the components which spring needs to take care for creating objects
+	
+	-> Autowired
+		-> to inject the dependency inside a class
+	-> Qualifier
+		-> if there more than one same beans, then qualifier is used to resolve the conflict to choose
+	-> Constructor Injection
+	-> Setter Injection
+	
+Hibernates
+	 -> Intergation with spring
+	 -> states
+	 -> JPA
+	 -> hibernate caching level1
+	 -> hibernate caching level2 -> ehcache
+	 
+	
+	

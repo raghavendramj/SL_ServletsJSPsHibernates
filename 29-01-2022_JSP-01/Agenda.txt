@@ -1,0 +1,19 @@
+Agenda
+-----------
+JSPs
+Section Introduction
+An Overview of JSP
+Assisted Practice: Creating a Simple JSP Page
+Scripting Elements or JSP Tags
+JSP Implicit Objects
+Assisted Practice: JSP Implicit Objects"
+---------------------------------------------- 
+JSP Directives
+Assisted Practice: JSP Directives
+JSP Action Tags
+Assisted Practice: JSP Action Tags
+JSTL
+----------------------------------------------
+Session Handling
+Assisted Practice: Session Handling
+Q&A with Knowledge Checks (5) 
