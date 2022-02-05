@@ -1,0 +1,36 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.simplilearn.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>StudentServlet</servlet-name>
+  	<servlet-class>com.simplilearn.servlets.StudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ClassRoomServlet</servlet-name>
+  	<servlet-class>com.simplilearn.servlets.ClassRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>StudentServlet</servlet-name>
+  	<url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>ClassRoomServlet</servlet-name>
+  	<url-pattern>/classRoom</url-pattern>
+  </servlet-mapping>
+</web-app>
