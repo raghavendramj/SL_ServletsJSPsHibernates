@@ -1,0 +1,19 @@
+Manually Adding all the tables :-
+
+Class
+	-> id, name, subject_id
+
+Subject
+	-> id, name, teacher_id
+
+Class_Subject
+	id, subject_id, class_id
+
+Teacher
+	id, name
+
+Class_Teacher
+	id, teacher_id, class_id
+
+Student
+	id, name, class_id

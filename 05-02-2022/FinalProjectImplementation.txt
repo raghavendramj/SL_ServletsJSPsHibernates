@@ -1,0 +1,34 @@
+Type of Project:- Maven
+----------------------------
+Requirements:-
+	1. Administrative portal for the Learner’s Academy, Its is a school that has an online management system.
+	2. Single administrator login.
+	3a. Should have a UI using JSP <With Create UI>
+		Create a form for the following <POST>
+			a. List of all the subjects for all the classes
+			b. List of all the teachers
+			c. List of all the classes
+			d. List of students
+	3b. Create List of all the subjects, teachers, classes and students in the database
+	4. UI to view all the details of the following 
+			a. List of all the subjects
+			b. List of all the teachers
+			c. List of all the classes
+			d. List of students
+
+Actors: Hibernate <Entity>
+	1. ClassRoom
+	2. Subject
+	3. Student
+	4. Teacher
+
+RelationShips
+	ManyToMany Mapping -> ClassRoom (N) : (N) Subject
+	ManyToMany Mapping -> Teacher (N) : (N) ClassRoom
+	OneToMany Mapping -> Teacher (1) : (N) Subject
+	OneToOneMapping -> Student (1) : (1) ClassRoom 
+	
+	
+	Servlet + Hibernate Flow
+	
+	

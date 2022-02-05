@@ -1,0 +1,22 @@
+student-form.jsp
+	-> createStudent.jsp
+		->form action = /mylearnersacademy/student?action=list, method= POST
+				Name ( name="studentName")
+				Email ( name="email") 
+				Hidden Field -> name="action" value="new"
+		-> /student -> com.simplilearn.servlets.StudentServlet
+			action -> new/list
+			new	
+				-> saveStudent using Hibernates
+			list
+				-> getStudents	
+					session.setAttribute("students", students);
+					request.getRequestDispatcher("pages/list-students.jsp");
+					
+		->pages/list-students.jsp`
+				<c:forEach var="student" items="${students}">
+								student.id
+								student.name
+								student.email
+					
+		
